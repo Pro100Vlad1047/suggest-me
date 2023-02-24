@@ -1,12 +1,9 @@
-import s from "./Rate.module.scss";
-import icon from "../../../assets/styles/icons/star.svg";
+import styles from "./Rate.module.scss";
+import StarImage from "../../../assets/images/star.svg";
 
-const Rate = ({ rate, value, label }) => {
-  return (
-    <div className={s.rate}>
-      <img src={icon} alt="star" /> <span>{rate}</span>
-    </div>
-  );
-};
+const Rate = ({ rate }) => {
+    rate = Number(rate).toFixed(1);
+    return <div className={styles.rate_block}><img src={StarImage} alt="rate" /><p>{rate}</p></div>
+}
 
 export default Rate;

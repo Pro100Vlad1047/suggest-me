@@ -1,0 +1,38 @@
+.card_block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(32, 40, 62, 0.8);
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    width: 282px;
+    height: 480px;
+    padding: 0px 8px 12px;
+    gap: 16px;
+    transition:0.2s all;
+    &:hover{
+        transform:scale(1.03);
+    }
+    img {
+        border-radius: 8px;
+        width: 100%;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 600;
+        color: whitesmoke;
+        margin: 10px;
+        cursor: pointer;
+        text-decoration:none;
+    }
+
+    .rate_style {
+        position: absolute;
+        left: 16px;
+        top: 18px;
+    }
+}

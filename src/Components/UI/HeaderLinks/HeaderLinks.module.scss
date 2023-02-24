@@ -1,0 +1,18 @@
+.link_block {
+    width: 424px;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        color: #A8AEBF;
+        font-size:16px;
+        font-weight:600;
+        transition:0.2s all linear;
+        cursor:pointer;
+        &:hover{
+            color:whitesmoke;
+        }
+    }
+}

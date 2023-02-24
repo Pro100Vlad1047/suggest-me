@@ -1,0 +1,42 @@
+.input_wrapper {
+    width: 607px;
+    padding: 8px;
+    height: 56px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    display: flex;
+    gap: 2px;
+    .input_container {
+        input {
+            display: none;
+        }
+
+        & label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #aeb4c5;
+            padding: 0 32px;
+            border-radius: 8px;
+            cursor: pointer;
+            height: 40px;
+            transition:0.1s all linear;
+        }
+
+        & input:checked ~ label {
+            background: #7B6EF6;
+            color: #ebe9fe;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

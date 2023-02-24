@@ -1,0 +1,21 @@
+.logo_main {
+    position: relative;
+    width: 40px;
+    height: 40px;
+   // background: red;
+
+    a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        cursor:pointer;
+        z-index:1;
+    }
+
+    img{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+}

@@ -1,30 +1,31 @@
-@import url(./_fonts.scss);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Lato:wght@400;900&family=Playfair+Display+SC:wght@400;700;900&family=Poppins:ital,wght@0,600;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Ubuntu:wght@300;400;700&display=swap');
 
-// body {
-// }
-
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
-
-h1,
-p,
-ul {
-  margin: 0;
+body {
+  
+    font-family: 'Poppins', sans-serif;
+    
 }
-
-ul {
-  padding: 0;
+p, h1, h2 {
+    margin: 0px;
+    padding: 0px;
+    text-decoration:none;
 }
-
-li {
-  list-style: none;
+a{
+    text-decoration:none;
 }
-
 .container {
-  background: #121829;
-  backdrop-filter: blur(20px);
-  background-image: url(./images/Background.png);
-  background-size: cover;
+    background-image: url(../../assets/images/Background.svg);
+    backdrop-filter: blur(20px);
+    background-color: #121829;
+    background-size:cover;
+    min-height:100vh;
+
+}
+
+ul{
+    padding:0px;
+    margin:0px;
+}
+li{
+    list-style:none;
 }

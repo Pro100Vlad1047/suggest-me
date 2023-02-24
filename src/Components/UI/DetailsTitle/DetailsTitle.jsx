@@ -1,13 +1,11 @@
-import s from "./DetailsTitle.module.scss";
+import styles from "./DetailsTitle.module.scss";
 
-const DetailsTitle = ({ title, backdrop }) => {
-  return (
-    <div className={s.container}>
-      <p>{title}</p>
-
-      <img src={backdrop} alt="poster" />
-    </div>
-  );
-};
+const DetailsTitle = ({genres,title}) => {
+    
+    return <div className={styles.title_block}>
+        <a>{genres}</a>
+        <h1>{title}</h1>
+           </div>
+}
 
 export default DetailsTitle;
